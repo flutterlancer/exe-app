@@ -17,6 +17,7 @@ module.exports = {
             name: '@electron-forge/maker-squirrel',
             config: {
                 name: 'uom-lms',
+                shortcutName: 'UOM LMS',
                 setupIcon: './assets/icons/win/icon.ico',
             },
         },

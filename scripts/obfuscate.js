@@ -1,7 +1,7 @@
 const fs = require('fs');
 const JavaScriptObfuscator = require('javascript-obfuscator');
 
-const files = ['preload.js'];
+const files = ["main.js", 'preload.js'];
 files.forEach(file => {
     const sourceCode = fs.readFileSync(file, 'utf8');
     const obfuscated = JavaScriptObfuscator.obfuscate(sourceCode, {

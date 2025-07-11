@@ -1,19 +1,18 @@
 {
   "name": "exe-app",
   "version": "1.0.0",
-  "main": "main.js",
+  "productName": "UOM LMS",
+  "main": "main.obf.js",
   "scripts": {
     "obfuscate": "node scripts/obfuscate.js",
     "start": "electron-forge start",
-    "make": "npm run obfuscate && electron-forge make"
+    "make": "npm run obfuscate && electron-forge make",
+    "postinstall": "electron-rebuild"
   },
   "keywords": [],
-  "author": "",
+  "author": "RevenueX",
   "license": "ISC",
-  "description": "",
-  "dependencies": {
-    "hwid": "^0.5.0"
-  },
+  "description": "LMS FOR STUDENTS OF UNIVERSITY OF MONETIZATION",
   "devDependencies": {
     "@electron-forge/cli": "^7.8.1",
     "@electron-forge/maker-deb": "^7.8.1",
@@ -23,8 +22,12 @@
     "@electron-forge/plugin-auto-unpack-natives": "^7.8.1",
     "@electron-forge/plugin-fuses": "^7.8.1",
     "@electron/fuses": "^1.8.0",
+    "bytenode": "^1.5.7",
     "electron": "^37.2.1",
-    "electron-icon-maker": "^0.0.5"
+    "electron-icon-maker": "^0.0.5",
+    "javascript-obfuscator": "^4.1.1",
+    "node-addon-api": "^8.4.0",
+    "node-gyp": "^11.2.0"
   },
   "build": {
     "appId": "com.revenuex.lms.universityofmonetization.com",
@@ -38,5 +41,8 @@
       "buildResources": "build",
       "output": "release"
     }
+  },
+  "dependencies": {
+    "node-machine-id": "^1.1.12"
   }
 }

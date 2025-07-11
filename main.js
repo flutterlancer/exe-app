@@ -1,15 +1,20 @@
 const { app, BrowserWindow, Menu, systemPreferences, ipcMain, session } = require('electron');
 const path = require("path");
-let getHWID;
-(async () => {
-    ({ getHWID } = await import("hwid"));
-})();
+const { machineId: getHWID } = require('node-machine-id');
+
 
 let splash;
 let mainWindow;
 
 function createWindow() {
     Menu.setApplicationMenu(null);
+
+    // VM detection signals (pseudo)
+    const os = require('os');
+    if (os.hostname().toLowerCase().includes('vmware') || os.cpus()[0].model.includes('Virtual')) {
+        app.quit(); // reject running
+    }
+
 
     splash = new BrowserWindow({
         width: 300,
@@ -29,8 +34,9 @@ function createWindow() {
         width: 1280,
         height: 800,
         webPreferences: {
+            partition: "persist:userSession",
             contextIsolation: true,
-            preload: path.join(__dirname, 'preload.js'),
+            preload: path.join(__dirname, 'preload.obf.js'),
             nodeIntegration: false, // recommended
         },
         // autoHideMenuBar: true,
@@ -45,7 +51,7 @@ function createWindow() {
     // Inject custom header to ALL requests
     session.defaultSession.webRequest.onBeforeSendHeaders(async (details, callback) => {
         details.requestHeaders["language"] = "en-English";
-        const deviceId = await getHWID;
+        const deviceId = await getHWID(true);
         details.requestHeaders["x-safe-api"] = deviceId;
         callback({ requestHeaders: details.requestHeaders });
     });
@@ -64,6 +70,39 @@ function createWindow() {
             splash.webContents.send('show-error', `Failed to load website: ${errorDescription} (${errorCode})`);
         }
     });
+
+    mainWindow.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+    });
+    mainWindow.addEventListener('keydown', function (e) {
+        // Block DevTools shortcuts
+        if (
+            (e.ctrlKey && e.shiftKey && e.key === 'I') || // Ctrl+Shift+I
+            (e.ctrlKey && e.shiftKey && e.key === 'C') || // Ctrl+Shift+C
+            (e.ctrlKey && e.shiftKey && e.key === 'J') || // Ctrl+Shift+J
+            (e.ctrlKey && e.key === 'U') ||               // Ctrl+U
+            (e.key === 'F12')                             // F12
+        ) {
+            e.preventDefault();
+        }
+    });
+
+    mainWindow.webContents.on('before-input-event', (event, input) => {
+        if (
+            input.control && input.shift && (
+                input.key.toLowerCase() === 'i' || // Ctrl+Shift+I
+                input.key.toLowerCase() === 'c' || // Ctrl+Shift+C
+                input.key.toLowerCase() === 'j'    // Ctrl+Shift+J
+            ) || input.key === 'F12'
+        ) {
+            event.preventDefault();
+        }
+    });
+
+    win.webContents.on('devtools-opened', () => {
+        win.webContents.closeDevTools(); // Immediately close if opened
+    });
+
 }
 
 ipcMain.on('main-ready', () => {
@@ -100,5 +139,5 @@ app.on('activate', () => {
 });
 
 ipcMain.handle('get-device-id', async () => {
-    return await getHWID;
+    return await getHWID(true);
 });

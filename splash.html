@@ -1,0 +1,31 @@
+<!-- splash.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 0;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="assets/favicon.png" alt="App Icon" width="128" height="128">
+    <div id="error-message" style="color: red; margin-top: 20px; display: none;"></div>
+    <script>
+        const { ipcRenderer } = require('electron');
+        ipcRenderer.on('show-error', (event, message) => {
+            const errorDiv = document.getElementById('error-message');
+            errorDiv.textContent = message;
+            errorDiv.style.display = 'block';
+        });
+    </script>
+</body>
+
+</html>

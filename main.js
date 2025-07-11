@@ -45,7 +45,7 @@ function createWindow() {
     // Inject custom header to ALL requests
     session.defaultSession.webRequest.onBeforeSendHeaders(async (details, callback) => {
         details.requestHeaders["language"] = "en-English";
-        const deviceId = await getHWID();
+        const deviceId = await getHWID;
         details.requestHeaders["x-safe-api"] = deviceId;
         callback({ requestHeaders: details.requestHeaders });
     });
@@ -100,5 +100,5 @@ app.on('activate', () => {
 });
 
 ipcMain.handle('get-device-id', async () => {
-    return await getHWID();
+    return await getHWID;
 });

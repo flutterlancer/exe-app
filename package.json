@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "main.js",
   "scripts": {
+    "obfuscate": "node scripts/obfuscate.js",
     "start": "electron-forge start",
-    "dist": "electron-builder --win --x64"
+    "make": "npm run obfuscate && electron-forge make"
   },
   "keywords": [],
   "author": "",

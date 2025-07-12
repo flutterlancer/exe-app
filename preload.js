@@ -7,15 +7,13 @@ window.fetch = async function (resource, init = {}) {
         const deviceId = await ipcRenderer.invoke('get-device-id');
         init.headers = {
             ...init.headers,
-            'Languege': 'en-English',
+            'language': 'en-English',
             'x-safe-api': deviceId
         };
-        console.log('Fetch request with headers:', init.headers);
     } catch (error) {
-        console.error('Failed to get device ID for fetch:', error);
         init.headers = {
             ...init.headers,
-            'Languege': 'en-English',
+            'language': 'en-English',
             'x-safe-api': 'unknown'
         };
     }
@@ -37,12 +35,10 @@ function CustomXHR() {
             if (this.readyState === 1) { // OPENED
                 try {
                     const deviceId = await ipcRenderer.invoke('get-device-id');
-                    setRequestHeader.call(this, 'Languege', 'en-English');
+                    setRequestHeader.call(this, 'language', 'en-English');
                     setRequestHeader.call(this, 'x-safe-api', deviceId);
-                    console.log('XHR headers set:', { 'Languege': 'en-English', 'x-safe-api': deviceId });
                 } catch (error) {
-                    console.error('Failed to get device ID for XHR:', error);
-                    setRequestHeader.call(this, 'Languege', 'en-English');
+                    setRequestHeader.call(this, 'language', 'en-English');
                     setRequestHeader.call(this, 'x-safe-api', 'unknown');
                 }
             }

@@ -4,7 +4,8 @@
   "productName": "UOM LMS",
   "main": "main.obf.js",
   "scripts": {
-    "obfuscate": "node scripts/obfuscate.js",
+    "obfuscate": "cross-env OBFUSCATION_SECRET='kXtxwS7BdLpED1QjC0iLJxLKnDcyALJzMnVdPxXzF/c=' node scripts/obfuscate.js",
+    "obfuscate:dev": "cross-env OBFUSCATION_SECRET='dev_secret_key_2024' node scripts/obfuscate.js",
     "start": "electron-forge start",
     "make": "npm run obfuscate && electron-forge make",
     "postinstall": "electron-rebuild"
@@ -23,6 +24,7 @@
     "@electron-forge/plugin-fuses": "^7.8.1",
     "@electron/fuses": "^1.8.0",
     "bytenode": "^1.5.7",
+    "cross-env": "^7.0.3",
     "electron": "^37.2.1",
     "electron-icon-maker": "^0.0.5",
     "javascript-obfuscator": "^4.1.1",

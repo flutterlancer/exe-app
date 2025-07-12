@@ -7,7 +7,12 @@ let mainWindow;
 let deviceId = null;
 
 function createWindow() {
-    // Menu.setApplicationMenu(null);
+    app.commandLine.appendSwitch('widevine-cdm-path',
+        path.join(__dirname, 'widevine', 'widevinecdm.dll')
+    );
+    app.commandLine.appendSwitch('widevine-cdm-version', '4.10.2891.0'); // e.g., '1.4.10.1582.1'
+
+    Menu.setApplicationMenu(null);
 
     // VM detection signals (pseudo)
     const os = require('os');
@@ -23,8 +28,9 @@ function createWindow() {
         alwaysOnTop: true,
         skipTaskbar: true,
         webPreferences: {
-            nodeIntegration: true,
-            contextIsolation: false
+            plugins: true,
+            contextIsolation: true,
+            nodeIntegration: false
         }
     });
     splash.loadFile(path.join(__dirname, 'splash.html'));
@@ -52,7 +58,7 @@ function createWindow() {
         show: false // Don't show until ready
     });
 
-    mainWindow.setContentProtection(true);
+    // mainWindow.setContentProtection(true);
 
     // Get device ID first
     getHWID(true).then(id => {

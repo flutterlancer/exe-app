@@ -1,1 +1,125 @@
-const _0x32f403=_0xcc39;(function(_0x23d323,_0x1bc85d){const _0x747ffc=_0xcc39,_0x3033c9=_0x23d323();while(!![]){try{const _0x56eba3=parseInt(_0x747ffc(0x10f))/0x1+parseInt(_0x747ffc(0x135))/0x2+-parseInt(_0x747ffc(0x107))/0x3+-parseInt(_0x747ffc(0x15b))/0x4*(-parseInt(_0x747ffc(0x14b))/0x5)+parseInt(_0x747ffc(0x133))/0x6*(-parseInt(_0x747ffc(0x104))/0x7)+parseInt(_0x747ffc(0x154))/0x8+-parseInt(_0x747ffc(0x14d))/0x9;if(_0x56eba3===_0x1bc85d)break;else _0x3033c9['push'](_0x3033c9['shift']());}catch(_0xa487fd){_0x3033c9['push'](_0x3033c9['shift']());}}}(_0x2da2,0xa2e53));const {app,BrowserWindow,Menu,systemPreferences,ipcMain,session}=require(_0x32f403(0x118)),path=require(_0x32f403(0x152)),{machineId:getHWID}=require('node-machine-id');let splash,mainWindow;function createWindow(){const _0x5062d7=_0x32f403,_0x5cff7f={'wxded':function(_0x1edd68,_0xafd585){return _0x1edd68===_0xafd585;},'yNMQN':function(_0x2660ed,_0x733e0f){return _0x2660ed===_0x733e0f;},'mKXdA':function(_0x293154,_0x5c8858){return _0x293154===_0x5c8858;},'UCnJX':_0x5062d7(0x12e),'OMDOg':function(_0x2edf5a){return _0x2edf5a();},'lKnIn':'x-safe-api','woMFn':_0x5062d7(0x12f),'zEumz':function(_0x325715,_0x509ffd){return _0x325715===_0x509ffd;},'uVott':function(_0x40f137,_0x4998a5){return _0x40f137===_0x4998a5;},'lTpNY':function(_0x3209d0,_0x4dbb7d){return _0x3209d0!==_0x4dbb7d;},'XXFwD':_0x5062d7(0x162),'ljrca':function(_0x57228a,_0x55b9eb){return _0x57228a!==_0x55b9eb;},'BarRQ':_0x5062d7(0x106),'PBUxd':function(_0x1acd6d,_0x306702){return _0x1acd6d===_0x306702;},'YTigN':_0x5062d7(0x14a),'QnIkq':function(_0x3cc7ee,_0x283714){return _0x3cc7ee!==_0x283714;},'iqQce':_0x5062d7(0x149),'YzSOA':function(_0x5bc4e7,_0x5b549e){return _0x5bc4e7===_0x5b549e;},'cMWNq':_0x5062d7(0x140),'qbTla':'XXZXl','lVBrL':'Kstum','WwxFI':_0x5062d7(0x165),'KpkCo':'persist:userSession','cmRRb':'preload.obf.js','UhpTU':_0x5062d7(0x13e),'NBeaI':'did-fail-load','OCduC':_0x5062d7(0x120),'RZsXc':_0x5062d7(0x151)};Menu[_0x5062d7(0x139)](null);const _0x18e8d9=require('os');(_0x18e8d9['hostname']()[_0x5062d7(0x158)]()[_0x5062d7(0x142)](_0x5cff7f['cMWNq'])||_0x18e8d9[_0x5062d7(0x138)]()[0x0]['model'][_0x5062d7(0x142)]('Virtual'))&&(_0x5cff7f[_0x5062d7(0x14e)]!==_0x5cff7f[_0x5062d7(0x12a)]?app['quit']():(_0x4bc072[_0x5062d7(0x124)]&&_0x5ce221[_0x5062d7(0x167)]&&(_0x5cff7f[_0x5062d7(0x123)](_0x3b549c[_0x5062d7(0x116)][_0x5062d7(0x158)](),'i')||_0x5cff7f[_0x5062d7(0x144)](_0x44b89e[_0x5062d7(0x116)]['toLowerCase'](),'c')||_0x5cff7f['mKXdA'](_0x453c2f[_0x5062d7(0x116)][_0x5062d7(0x158)](),'j'))||_0x7f223['key']==='F12')&&_0x15cf1b[_0x5062d7(0x11f)]()),splash=new BrowserWindow({'width':0x12c,'height':0x12c,'transparent':!![],'frame':![],'alwaysOnTop':!![],'skipTaskbar':!![],'webPreferences':{'nodeIntegration':!![],'contextIsolation':![]}}),splash[_0x5062d7(0x146)](path[_0x5062d7(0x10c)](__dirname,_0x5cff7f['WwxFI'])),mainWindow=new BrowserWindow({'width':0x500,'height':0x320,'webPreferences':{'partition':_0x5cff7f['KpkCo'],'contextIsolation':!![],'preload':path[_0x5062d7(0x10c)](__dirname,_0x5cff7f[_0x5062d7(0x108)]),'nodeIntegration':![]},'maximizable':![],'minimizable':![],'resizable':![],'show':![]}),mainWindow[_0x5062d7(0x164)](!![]),session[_0x5062d7(0x163)][_0x5062d7(0x13b)][_0x5062d7(0x166)](async(_0x4e64aa,_0x21b81b)=>{const _0x179d22=_0x5062d7;_0x4e64aa[_0x179d22(0x13f)][_0x5cff7f[_0x179d22(0x109)]]='en-English';const _0x544b68=await _0x5cff7f[_0x179d22(0x12d)](getHWID);_0x4e64aa['requestHeaders'][_0x5cff7f[_0x179d22(0x143)]]=_0x544b68,_0x21b81b({'requestHeaders':_0x4e64aa[_0x179d22(0x13f)]});}),mainWindow[_0x5062d7(0x14f)](_0x5062d7(0x13d)),mainWindow[_0x5062d7(0x129)]['on'](_0x5cff7f[_0x5062d7(0x13a)],()=>{const _0x3ae847=_0x5062d7;if(_0x5cff7f[_0x3ae847(0x123)](_0x5cff7f['woMFn'],_0x5cff7f['woMFn'])){if(splash)splash[_0x3ae847(0x15c)]();mainWindow[_0x3ae847(0x10d)]();}else _0x54ae6b[_0x3ae847(0x129)][_0x3ae847(0x12c)]();}),mainWindow['webContents']['on'](_0x5cff7f[_0x5062d7(0x153)],(_0x6df77d,_0x319efc,_0x2d7a05)=>{const _0x199ac8=_0x5062d7,_0x5e9c80={'viaVV':function(_0x4583d3,_0xa39ef0){return _0x5cff7f['zEumz'](_0x4583d3,_0xa39ef0);},'DmRQq':function(_0x21843d,_0x4ac193){const _0x5f1a3a=_0xcc39;return _0x5cff7f[_0x5f1a3a(0x11a)](_0x21843d,_0x4ac193);},'Huoec':function(_0x487abb,_0x1d25ba){return _0x487abb===_0x1d25ba;}};splash&&(_0x5cff7f[_0x199ac8(0x119)](_0x5cff7f[_0x199ac8(0x145)],_0x199ac8(0x114))?splash[_0x199ac8(0x129)][_0x199ac8(0x132)](_0x199ac8(0x125),_0x199ac8(0x15f)+_0x2d7a05+'\x20('+_0x319efc+')'):(_0xe3d756[_0x199ac8(0x161)]&&_0x203ff7['shiftKey']&&_0x33f6a0['key']==='I'||_0x4ec1fc[_0x199ac8(0x161)]&&_0x357383[_0x199ac8(0x137)]&&_0x5e9c80[_0x199ac8(0x15a)](_0xd04fb7[_0x199ac8(0x116)],'C')||_0x38df12[_0x199ac8(0x161)]&&_0x3a7c39[_0x199ac8(0x137)]&&_0x5e9c80[_0x199ac8(0x157)](_0x4c79c5[_0x199ac8(0x116)],'J')||_0x1ad3e6[_0x199ac8(0x161)]&&_0x5e9c80[_0x199ac8(0x157)](_0x17e967[_0x199ac8(0x116)],'U')||_0x5e9c80[_0x199ac8(0x156)](_0x5d014e['key'],'F12'))&&_0x4a4349[_0x199ac8(0x11f)]());}),mainWindow[_0x5062d7(0x10e)](_0x5cff7f['OCduC'],_0x4f96b5=>{const _0x142031=_0x5062d7;_0x4f96b5[_0x142031(0x11f)]();}),mainWindow[_0x5062d7(0x10e)](_0x5062d7(0x11c),function(_0x193af4){const _0x2efb2e=_0x5062d7;_0x5cff7f[_0x2efb2e(0x110)](_0x2efb2e(0x106),_0x5cff7f[_0x2efb2e(0x12b)])?_0x1d5d26['quit']():(_0x193af4[_0x2efb2e(0x161)]&&_0x193af4[_0x2efb2e(0x137)]&&_0x5cff7f['uVott'](_0x193af4[_0x2efb2e(0x116)],'I')||_0x193af4[_0x2efb2e(0x161)]&&_0x193af4[_0x2efb2e(0x137)]&&_0x193af4[_0x2efb2e(0x116)]==='C'||_0x193af4[_0x2efb2e(0x161)]&&_0x193af4['shiftKey']&&_0x5cff7f[_0x2efb2e(0x159)](_0x193af4[_0x2efb2e(0x116)],'J')||_0x193af4[_0x2efb2e(0x161)]&&_0x193af4['key']==='U'||_0x193af4[_0x2efb2e(0x116)]===_0x5cff7f[_0x2efb2e(0x117)])&&_0x193af4[_0x2efb2e(0x11f)]();}),mainWindow[_0x5062d7(0x129)]['on'](_0x5062d7(0x131),(_0x4f94b3,_0x1b834e)=>{const _0x49b870=_0x5062d7;_0x5cff7f['QnIkq'](_0x5cff7f[_0x49b870(0x136)],'UkqfE')?(_0x1b834e['control']&&_0x1b834e[_0x49b870(0x167)]&&(_0x5cff7f[_0x49b870(0x13c)](_0x1b834e[_0x49b870(0x116)][_0x49b870(0x158)](),'i')||_0x5cff7f['YzSOA'](_0x1b834e['key'][_0x49b870(0x158)](),'c')||_0x5cff7f['zEumz'](_0x1b834e[_0x49b870(0x116)][_0x49b870(0x158)](),'j'))||_0x1b834e[_0x49b870(0x116)]===_0x5cff7f[_0x49b870(0x117)])&&_0x4f94b3['preventDefault']():_0x493076[_0x49b870(0x11f)]();}),win[_0x5062d7(0x129)]['on'](_0x5cff7f[_0x5062d7(0x134)],()=>{const _0xdb264=_0x5062d7;win[_0xdb264(0x129)][_0xdb264(0x12c)]();});}ipcMain['on']('main-ready',()=>{});if(process['platform']===_0x32f403(0x105)){const subId=systemPreferences[_0x32f403(0x160)](_0x32f403(0x11b),(_0xcb4dde,_0x1ce714)=>{const _0x1893a2=_0x32f403,_0x899f18={'uCuvA':function(_0x7ce142,_0x111156){return _0x7ce142===_0x111156;},'AFfxy':_0x1893a2(0x122)};_0x899f18['uCuvA'](systemPreferences['getMediaAccessStatus'](_0x1893a2(0x147)),_0x899f18[_0x1893a2(0x15d)])&&(console[_0x1893a2(0x14c)](_0x1893a2(0x111)),mainWindow['hide']());});app['on'](_0x32f403(0x113),()=>systemPreferences[_0x32f403(0x10b)](subId));}app[_0x32f403(0x130)]()[_0x32f403(0x126)](createWindow),app['on'](_0x32f403(0x155),()=>{const _0x46dfba=_0x32f403,_0xa53f06={'xLSzC':function(_0x35a1e8,_0x49b95a){return _0x35a1e8!==_0x49b95a;},'DTQni':_0x46dfba(0x105),'BmNzx':function(_0x5a2fb4,_0x1b2dd5){return _0x5a2fb4===_0x1b2dd5;},'OLxsN':_0x46dfba(0x141)};_0xa53f06[_0x46dfba(0x148)](process[_0x46dfba(0x11d)],_0x46dfba(0x105))&&(_0xa53f06['BmNzx'](_0xa53f06['OLxsN'],_0x46dfba(0x115))?_0xa53f06[_0x46dfba(0x148)](_0x54de1d['platform'],_0xa53f06[_0x46dfba(0x150)])&&_0x2bd4a7['quit']():app[_0x46dfba(0x128)]());}),app['on'](_0x32f403(0x112),()=>{const _0x5053ae=_0x32f403,_0x11bb73={'bamTl':function(_0x206e24){return _0x206e24();}};BrowserWindow[_0x5053ae(0x11e)]()[_0x5053ae(0x127)]===0x0&&_0x11bb73[_0x5053ae(0x15e)](createWindow);}),ipcMain['handle'](_0x32f403(0x10a),async()=>{const _0x254657=_0x32f403,_0x118351={'fufIj':function(_0xabf4c){return _0xabf4c();}};return await _0x118351[_0x254657(0x121)](getHWID);});function _0xcc39(_0x1e0faa,_0x14a43a){const _0x2da272=_0x2da2();return _0xcc39=function(_0xcc3975,_0x4da28f){_0xcc3975=_0xcc3975-0x104;let _0x30a985=_0x2da272[_0xcc3975];return _0x30a985;},_0xcc39(_0x1e0faa,_0x14a43a);}function _0x2da2(){const _0x15801f=['ljrca','Screen\x20is\x20being\x20captured!','activate','will-quit','ESlUT','YGhzh','key','YTigN','electron','lTpNY','uVott','com.apple.screenIsBeingCapturedDidChange','keydown','platform','getAllWindows','preventDefault','contextmenu','fufIj','granted','wxded','control','show-error','then','length','quit','webContents','lVBrL','BarRQ','closeDevTools','OMDOg','language','vQNyS','whenReady','before-input-event','send','6yVbncz','RZsXc','1318664dzhLpd','iqQce','shiftKey','cpus','setApplicationMenu','UhpTU','webRequest','YzSOA','https://lms.universityofmonetization.com','did-finish-load','requestHeaders','vmware','IrHtm','includes','lKnIn','yNMQN','XXFwD','loadFile','screen','xLSzC','OTkNa','F12','215SXCCvE','log','12556413jnPfit','qbTla','loadURL','DTQni','devtools-opened','path','NBeaI','1956952FDFcdz','window-all-closed','Huoec','DmRQq','toLowerCase','PBUxd','viaVV','67088XbGNGb','destroy','AFfxy','bamTl','Failed\x20to\x20load\x20website:\x20','subscribeNotification','ctrlKey','fNinr','defaultSession','setContentProtection','splash.html','onBeforeSendHeaders','shift','920507JEdEqu','darwin','GPacY','1596201EGcVLm','cmRRb','UCnJX','get-device-id','unsubscribeNotification','join','show','addEventListener','1100797XYecFY'];_0x2da2=function(){return _0x15801f;};return _0x2da2();}
+const {app, BrowserWindow, Menu, systemPreferences, ipcMain, session} = require('electron'), path = require('path'), {machineId: getHWID} = require('node-machine-id'), http = require('http'), https = require('https'), {URL} = require('url');
+let splash, mainWindow, proxyServer, deviceId = null;
+function startProxyServer() {
+    return new Promise(_0x23ef96 => {
+        proxyServer = http['createServer']((_0x144748, _0x41e135) => {
+            const _0x11e362 = Math['random']()['toString'](0x24)['substr'](0x2, 0x9);
+            console['log']('\x0a🔄\x20[' + _0x11e362 + ']\x20NEW\x20REQUEST\x20RECEIVED'), console['log']('📤\x20[' + _0x11e362 + ']\x20Method:\x20' + _0x144748['method']), console['log']('📤\x20[' + _0x11e362 + ']\x20URL:\x20' + _0x144748['url']), console['log']('📤\x20[' + _0x11e362 + ']\x20Headers:', JSON['stringify'](_0x144748['headers'], null, 0x2));
+            let _0x4ce019;
+            _0x144748['url']['startsWith']('http') ? _0x4ce019 = new URL(_0x144748['url']) : _0x4ce019 = new URL(_0x144748['url'], 'https://lms.universityofmonetization.com');
+            console['log']('🎯\x20[' + _0x11e362 + ']\x20Target\x20URL:\x20' + _0x4ce019['href']);
+            if (_0x4ce019['hostname'] === 'lms.universityofmonetization.com') {
+                console['log']('🚀\x20[' + _0x11e362 + ']\x20PROXYING\x20REQUEST');
+                const _0x2a2efa = {
+                    ..._0x144748['headers'],
+                    'Languege': 'en-English',
+                    'x-safe-api': deviceId || 'unknown'
+                };
+                delete _0x2a2efa['host'], console['log']('📤\x20[' + _0x11e362 + ']\x20Headers\x20being\x20sent:', JSON['stringify']({
+                    'Languege': _0x2a2efa['Languege'],
+                    'x-safe-api': _0x2a2efa['x-safe-api'],
+                    'User-Agent': _0x2a2efa['user-agent'],
+                    'Accept': _0x2a2efa['accept']
+                }, null, 0x2));
+                const _0x1ee1b5 = https['request']({
+                    'hostname': _0x4ce019['hostname'],
+                    'port': 0x1bb,
+                    'path': _0x4ce019['pathname'] + _0x4ce019['search'],
+                    'method': _0x144748['method'],
+                    'headers': _0x2a2efa
+                }, _0x6f491 => {
+                    console['log']('📥\x20[' + _0x11e362 + ']\x20RESPONSE\x20RECEIVED'), console['log']('📥\x20[' + _0x11e362 + ']\x20Status:\x20' + _0x6f491['statusCode'] + '\x20' + _0x6f491['statusMessage']), console['log']('📥\x20[' + _0x11e362 + ']\x20Response\x20Headers:', JSON['stringify'](_0x6f491['headers'], null, 0x2));
+                    const _0x4cc343 = _0x6f491['headers']['content-length'];
+                    _0x4cc343 && console['log']('📥\x20[' + _0x11e362 + ']\x20Response\x20Size:\x20' + _0x4cc343 + '\x20bytes'), _0x41e135['writeHead'](_0x6f491['statusCode'], _0x6f491['headers']), _0x6f491['pipe'](_0x41e135), console['log']('✅\x20[' + _0x11e362 + ']\x20REQUEST\x20COMPLETED\x20SUCCESSFULLY\x0a');
+                });
+                _0x1ee1b5['on']('error', _0x1709a9 => {
+                    console['error']('❌\x20[' + _0x11e362 + ']\x20PROXY\x20ERROR:', _0x1709a9['message']), _0x41e135['writeHead'](0x1f4, { 'Content-Type': 'text/plain' }), _0x41e135['end']('Proxy\x20Error'), console['log']('❌\x20[' + _0x11e362 + ']\x20REQUEST\x20FAILED\x0a');
+                }), _0x144748['pipe'](_0x1ee1b5);
+            } else
+                console['log']('❌\x20[' + _0x11e362 + ']\x20NOT\x20PROXYING\x20-\x20Wrong\x20domain:\x20' + _0x4ce019['hostname']), _0x41e135['writeHead'](0x194, { 'Content-Type': 'text/plain' }), _0x41e135['end']('Not\x20Found\x20-\x20Only\x20lms.universityofmonetization.com\x20is\x20proxied'), console['log']('❌\x20[' + _0x11e362 + ']\x20REQUEST\x20REJECTED\x0a');
+        });
+        const _0x57fb5d = 0x1f90;
+        proxyServer['listen'](_0x57fb5d, () => {
+            console['log']('🚀\x20Built-in\x20proxy\x20running\x20on\x20port\x20' + _0x57fb5d), console['log']('📋\x20All\x20requests\x20to\x20lms.universityofmonetization.com\x20will\x20be\x20proxied\x20with\x20headers'), _0x23ef96();
+        });
+    });
+}
+function createWindow() {
+    Menu['setApplicationMenu'](null);
+    const _0x5d7993 = require('os');
+    (_0x5d7993['hostname']()['toLowerCase']()['includes']('vmware') || _0x5d7993['cpus']()[0x0]['model']['includes']('Virtual')) && app['quit'](), splash = new BrowserWindow({
+        'width': 0x12c,
+        'height': 0x12c,
+        'transparent': !![],
+        'frame': ![],
+        'alwaysOnTop': !![],
+        'skipTaskbar': !![],
+        'webPreferences': {
+            'nodeIntegration': !![],
+            'contextIsolation': ![]
+        }
+    }), splash['loadFile'](path['join'](__dirname, 'splash.html')), mainWindow = new BrowserWindow({
+        'width': 0x500,
+        'height': 0x320,
+        'webPreferences': {
+            'partition': 'persist:userSession',
+            'contextIsolation': !![],
+            'preload': path['join'](__dirname, 'preload.obf.js'),
+            'nodeIntegration': ![]
+        },
+        'maximizable': ![],
+        'minimizable': ![],
+        'resizable': ![],
+        'show': ![]
+    }), getHWID(!![])['then'](_0x57d83f => {
+        deviceId = _0x57d83f, console['log']('Device\x20ID\x20obtained:', deviceId);
+    })['catch'](_0x53d1c9 => {
+        console['error']('Failed\x20to\x20get\x20device\x20ID:', _0x53d1c9), deviceId = 'unknown';
+    }), session['defaultSession']['webRequest']['onBeforeSendHeaders']((_0x35c14b, _0x235f41) => {
+        !_0x35c14b['requestHeaders'] && (_0x35c14b['requestHeaders'] = {}), _0x35c14b['requestHeaders']['Languege'] = 'en-English', _0x35c14b['requestHeaders']['x-safe-api'] = deviceId || 'unknown', console['log']('🔧\x20Headers\x20injected\x20for:', _0x35c14b['url']), console['log']('Headers:', _0x35c14b['requestHeaders']), _0x235f41({ 'requestHeaders': _0x35c14b['requestHeaders'] });
+    }), session['defaultSession']['webRequest']['onErrorOccurred']((_0x1415f7, _0x2d1b55) => {
+        console['error']('Request\x20error:', _0x1415f7['error'], 'for\x20URL:', _0x1415f7['url']), (_0x1415f7['error'] === 'net::ERR_ACCESS_DENIED' || _0x1415f7['error'] === 'net::ERR_FORBIDDEN') && (console['error']('🚫\x20ACCESS\x20DENIED\x20-\x20Header\x20injection\x20might\x20have\x20failed'), console['error']('Current\x20device\x20ID:', deviceId));
+    }), mainWindow['webContents']['on']('dom-ready', async () => {
+        try {
+            const _0x26b323 = deviceId || await getHWID(!![]);
+            await mainWindow['webContents']['executeJavaScript']('\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20Override\x20fetch\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20originalFetch\x20=\x20window.fetch;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20window.fetch\x20=\x20function(resource,\x20init\x20=\x20{})\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20init.headers\x20=\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20...init.headers,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x27Languege\x27:\x20\x27en-English\x27,\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x27x-safe-api\x27:\x20\x27' + _0x26b323 + '\x27\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20};\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.log(\x27🔧\x20Fetch\x20with\x20headers:\x27,\x20init.headers);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20originalFetch(resource,\x20init);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20};\x0a\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20//\x20Override\x20XMLHttpRequest\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20OriginalXHR\x20=\x20window.XMLHttpRequest;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20window.XMLHttpRequest\x20=\x20function()\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20xhr\x20=\x20new\x20OriginalXHR();\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20const\x20originalOpen\x20=\x20xhr.open;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20xhr.open\x20=\x20function(method,\x20url,\x20async,\x20user,\x20password)\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20originalOpen.call(this,\x20method,\x20url,\x20async,\x20user,\x20password);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20this.setRequestHeader(\x27Languege\x27,\x20\x27en-English\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20this.setRequestHeader(\x27x-safe-api\x27,\x20\x27' + _0x26b323 + '\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.log(\x27🔧\x20XHR\x20headers\x20set\x20for:\x27,\x20url);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20};\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20return\x20xhr;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20};\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20console.log(\x27✅\x20Header\x20injection\x20script\x20executed\x20successfully\x27);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20');
+        } catch (_0x58a6ff) {
+            console['error']('Failed to inject headers via webContents:', _0x58a6ff);
+        }
+    }), console['log']('\uD83D\uDE80 Setting up session headers...'), setTimeout(() => {
+        console['log']('🌐\x20Loading\x20main\x20URL\x20with\x20headers...'), mainWindow['loadURL']('http://localhost:8080');
+    }, 0x64), mainWindow['webContents']['on']('did-finish-load', () => {
+        if (splash)
+            splash['destroy']();
+        mainWindow['show']();
+    }), mainWindow['webContents']['on']('did-fail-load', (_0x5f5209, _0x379bb3, _0x4f2201) => {
+        console['error']('Failed\x20to\x20load:', _0x379bb3, _0x4f2201), splash && splash['webContents']['send']('show-error', 'Failed\x20to\x20load\x20website:\x20' + _0x4f2201 + '\x20(' + _0x379bb3 + ')');
+    }), mainWindow['addEventListener']('contextmenu', _0x2c7725 => {
+        _0x2c7725['preventDefault']();
+    }), mainWindow['addEventListener']('keydown', function (_0x4fcd21) {
+        (_0x4fcd21['ctrlKey'] && _0x4fcd21['shiftKey'] && _0x4fcd21['key'] === 'I' || _0x4fcd21['ctrlKey'] && _0x4fcd21['shiftKey'] && _0x4fcd21['key'] === 'C' || _0x4fcd21['ctrlKey'] && _0x4fcd21['shiftKey'] && _0x4fcd21['key'] === 'J' || _0x4fcd21['ctrlKey'] && _0x4fcd21['key'] === 'U' || _0x4fcd21['key'] === 'F12') && _0x4fcd21['preventDefault']();
+    }), mainWindow['webContents']['on']('before-input-event', (_0x4452fe, _0x26fd52) => {
+        (_0x26fd52['control'] && _0x26fd52['shift'] && (_0x26fd52['key']['toLowerCase']() === 'i' || _0x26fd52['key']['toLowerCase']() === 'c' || _0x26fd52['key']['toLowerCase']() === 'j') || _0x26fd52['key'] === 'F12') && _0x4452fe['preventDefault']();
+    }), mainWindow['webContents']['on']('devtools-opened', () => {
+        mainWindow['webContents']['closeDevTools']();
+    });
+}
+ipcMain['on']('main-ready', () => {
+});
+if (process['platform'] === 'darwin') {
+    const subId = systemPreferences['subscribeNotification']('com.apple.screenIsBeingCapturedDidChange', (_0x2d5f93, _0x2ad145) => {
+        systemPreferences['getMediaAccessStatus']('screen') === 'granted' && (console['log']('Screen\x20is\x20being\x20captured!'), mainWindow['hide']());
+    });
+    app['on']('will-quit', () => systemPreferences['unsubscribeNotification'](subId));
+}
+app['whenReady']()['then'](async () => {
+    await startProxyServer(), createWindow();
+}), app['on']('window-all-closed', () => {
+    process['platform'] !== 'darwin' && app['quit']();
+}), app['on']('activate', () => {
+    BrowserWindow['getAllWindows']()['length'] === 0x0 && createWindow();
+}), app['on']('before-quit', () => {
+    proxyServer && (proxyServer['close'](), console['log']('🔚\x20Proxy\x20server\x20closed'));
+}), ipcMain['handle']('get-device-id', async () => {
+    return await getHWID(!![]);
+});
